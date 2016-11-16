@@ -16,7 +16,7 @@
       <guid>https://inonedamnpage.github.io/post/css-basics/</guid>
       <description>
 
-&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 
 &lt;p&gt;CSS forms the basis of styling of web pages. With CSS, you can apply styles to make your web pages more readable and beautiful.&lt;/p&gt;
 
@@ -26,7 +26,7 @@
 
 &lt;figure class=&#34;code&#34;&gt;
   &lt;figcaption&gt;
-  	&lt;span&gt;Code caption shortcode&lt;/span&gt;
+  	&lt;span&gt;A typical CSS Selector&lt;/span&gt;
   &lt;/figcaption&gt;
   &lt;div class=&#34;codewrapper&#34;&gt;
     &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
@@ -42,9 +42,27 @@
 
 &lt;p&gt;The first part &lt;code&gt;div&lt;/code&gt; is called a selector, and the next part is called a declaration.&lt;/p&gt;
 
-&lt;h4 id=&#34;types-of-selectors&#34;&gt;Types of selectors&lt;/h4&gt;
+&lt;h1 id=&#34;types-of-selectors&#34;&gt;Types of selectors&lt;/h1&gt;
 
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;/* tag selector */&lt;/span&gt;
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Types of CSS Selectors&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;/* tag selector */&lt;/span&gt;
 &lt;span style=&#34;color: #f92672&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color: #f8f8f2&#34;&gt;color&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;blue;&lt;/span&gt;
 &lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
@@ -57,9 +75,12 @@
     &lt;span style=&#34;color: #f8f8f2&#34;&gt;color&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;blue;&lt;/span&gt;
 &lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
 
 
-&lt;h4 id=&#34;types-of-css-units&#34;&gt;Types of CSS Units&lt;/h4&gt;
+&lt;h1 id=&#34;types-of-css-units&#34;&gt;Types of CSS Units&lt;/h1&gt;
 
 &lt;p&gt;Units are used everywhere in CSS to specify length, width, height etc of content and tags. They are basically divided into absolute and relative units.&lt;/p&gt;
 
@@ -77,7 +98,7 @@
 &lt;li&gt;&lt;code&gt;vw&lt;/code&gt; and &lt;code&gt;vh&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;colors-in-css&#34;&gt;Colors in CSS&lt;/h4&gt;
+&lt;h1 id=&#34;colors-in-css&#34;&gt;Colors in CSS&lt;/h1&gt;
 
 &lt;p&gt;Colors in CSS can be represented in two ways:&lt;/p&gt;
 
@@ -86,7 +107,7 @@
 &lt;li&gt;&lt;code&gt;#000000&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;commonly-used-attributes-in-css&#34;&gt;Commonly used attributes in CSS&lt;/h4&gt;
+&lt;h1 id=&#34;commonly-used-attributes-in-css&#34;&gt;Commonly used attributes in CSS&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;color&lt;/em&gt;: Mostly refers to the font color of the element.&lt;/li&gt;

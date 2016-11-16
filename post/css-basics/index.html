@@ -64,6 +64,10 @@
 <ul class="main-navigation">
   
   
+    
+      <li><a href="https://inonedamnpage.github.io/" title="Home">Home</a></li>
+    
+  
 </ul>
 
 
@@ -76,6 +80,13 @@
 
 </ul>
 
+
+<form action="https://www.google.com/search" method="get" target="_blank">
+  <fieldset role="search">
+  	<input class="search" type="text" name="q" results="0" placeholder="Search"/>
+    <input type="hidden" name="q" value="site:https://inonedamnpage.github.io/" />
+  </fieldset>
+</form>
 
 </nav>
 
@@ -109,9 +120,19 @@
           
           
           
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#types-of-selectors">Types of selectors</a></li>
+<li><a href="#types-of-css-units">Types of CSS Units</a></li>
+<li><a href="#colors-in-css">Colors in CSS</a></li>
+<li><a href="#commonly-used-attributes-in-css">Commonly used attributes in CSS</a></li>
+</ul>
+</nav>
+          
           
 
-<h3 id="introduction">Introduction</h3>
+<h1 id="introduction">Introduction</h1>
 
 <p>CSS forms the basis of styling of web pages. With CSS, you can apply styles to make your web pages more readable and beautiful.</p>
 
@@ -121,7 +142,7 @@
 
 <figure class="code">
   <figcaption>
-  	<span>Code caption shortcode</span>
+  	<span>A typical CSS Selector</span>
   </figcaption>
   <div class="codewrapper">
     <table class="highlighttable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%">1
@@ -137,9 +158,27 @@
 
 <p>The first part <code>div</code> is called a selector, and the next part is called a declaration.</p>
 
-<h4 id="types-of-selectors">Types of selectors</h4>
+<h1 id="types-of-selectors">Types of selectors</h1>
 
-<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #75715e">/* tag selector */</span>
+
+
+<figure class="code">
+  <figcaption>
+  	<span>Types of CSS Selectors</span>
+  </figcaption>
+  <div class="codewrapper">
+    <table class="highlighttable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #75715e">/* tag selector */</span>
 <span style="color: #f92672">div</span> <span style="color: #f8f8f2">{</span>
     <span style="color: #f8f8f2">color</span><span style="color: #f92672">:</span> <span style="color: #f8f8f2">blue;</span>
 <span style="color: #f8f8f2">}</span>
@@ -152,9 +191,12 @@
     <span style="color: #f8f8f2">color</span><span style="color: #f92672">:</span> <span style="color: #f8f8f2">blue;</span>
 <span style="color: #f8f8f2">}</span>
 </pre></div>
+</td></tr></table>
+  </div>
+</figure>
 
 
-<h4 id="types-of-css-units">Types of CSS Units</h4>
+<h1 id="types-of-css-units">Types of CSS Units</h1>
 
 <p>Units are used everywhere in CSS to specify length, width, height etc of content and tags. They are basically divided into absolute and relative units.</p>
 
@@ -172,7 +214,7 @@
 <li><code>vw</code> and <code>vh</code></li>
 </ul>
 
-<h4 id="colors-in-css">Colors in CSS</h4>
+<h1 id="colors-in-css">Colors in CSS</h1>
 
 <p>Colors in CSS can be represented in two ways:</p>
 
@@ -181,7 +223,7 @@
 <li><code>#000000</code></li>
 </ul>
 
-<h4 id="commonly-used-attributes-in-css">Commonly used attributes in CSS</h4>
+<h1 id="commonly-used-attributes-in-css">Commonly used attributes in CSS</h1>
 
 <ul>
 <li><em>color</em>: Mostly refers to the font color of the element.</li>
@@ -238,15 +280,15 @@
   
   <ul class="sidebar-nav">
     <li class="sidebar-nav-item">
+      <a target="_blank" href="https://github.com/uniquerockrz/" title="https://github.com/uniquerockrz/"><i class="fa fa-github fa-3x"></i></a>
       
       
-      
-      
+      <a target="_blank" href="https://twitter.com/SauravAtFreedom/" title="https://twitter.com/SauravAtFreedom/"><i class="fa fa-twitter fa-3x"></i></a>
        
       
       
       
-      
+      <a target="_blank" href="https://facebook.com/sauravmodak" title="https://facebook.com/sauravmodak"><i class="fa fa-facebook fa-3x"></i></a>
       
       
 
@@ -261,6 +303,19 @@
 
   
   
+  
+    
+      <section class="even">
+        <h1>Recent Posts</h1>
+        <ul id="recent_posts">
+          
+            <li class="post">
+              <a href="/post/css-basics/">CSS Basics</a>
+            </li>
+          
+        </ul>
+      </section>
+    
   
 
 </aside>
