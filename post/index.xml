@@ -6,8 +6,61 @@
     <description>Recent content in Post-rsses on In One Damn Page</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Nov 2016 20:24:25 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 16 Nov 2016 19:50:39 +0530</lastBuildDate>
     <atom:link href="https://inonedamnpage.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CSS Sizing Elements</title>
+      <link>https://inonedamnpage.github.io/post/css-sizing-elements/</link>
+      <pubDate>Wed, 16 Nov 2016 19:50:39 +0530</pubDate>
+      
+      <guid>https://inonedamnpage.github.io/post/css-sizing-elements/</guid>
+      <description>
+
+&lt;h1 id=&#34;the-css-box-model&#34;&gt;The CSS Box Model&lt;/h1&gt;
+
+&lt;p&gt;All elements in an HTML page can be broken down to and represented in boxes. So CSS provides a box model which is used to size elements.&lt;/p&gt;
+
+&lt;p&gt;The basic content of HTML is surrounded by &lt;code&gt;padding&lt;/code&gt;, &lt;code&gt;border&lt;/code&gt;, and &lt;code&gt;margin&lt;/code&gt;. While by default (&lt;code&gt;box-sizing: content-box&lt;/code&gt;), padding. border and margin are thought to be outside the element, you can change padding and border to be inside and margin on the outside.&lt;/p&gt;
+
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;CSS Box Sizing&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
+2
+3&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;box&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;sizing&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;border&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;box;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;h1 id=&#34;css-display-properties&#34;&gt;CSS Display Properties&lt;/h1&gt;
+
+&lt;p&gt;CSS elements can have two kind of display properties:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;display: block&lt;/code&gt;: Take up as much width as possible (with restraint from parent) and height according to the content. Eg: &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;display: inline&lt;/code&gt;: Take up height and width according to content. Eg: &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;. You cannot set the height and width of these elements, but can set the border and padding (which gets applied to the sides but not in top and bottom). Inline elements wrap when the content is bigger than their parent.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;semantic-elements&#34;&gt;Semantic Elements&lt;/h1&gt;
+
+&lt;p&gt;Semantic elements make it easier to organise content in an HTML page. They also make the markup readable and provide support for accessibility and SEO. Some kind of semantic elements are: &lt;code&gt;&amp;lt;header&amp;gt;, &amp;lt;footer&amp;gt;, &amp;lt;section&amp;gt;, &amp;lt;article&amp;gt;&lt;/code&gt; etc.&lt;/p&gt;
+
+&lt;h1 id=&#34;some-advanced-css-properties&#34;&gt;Some Advanced CSS Properties&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;float&lt;/em&gt;: Incase of an image, the specify the direction the image will align to, and the text will take up rest of the page.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>CSS Basics</title>
@@ -45,7 +98,7 @@
 
 &lt;h1 id=&#34;types-of-selectors&#34;&gt;Types of selectors&lt;/h1&gt;
 
-&lt;p&gt;
+
 
 &lt;figure class=&#34;code&#34;&gt;
   &lt;figcaption&gt;
@@ -79,7 +132,7 @@
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
   &lt;/div&gt;
 &lt;/figure&gt;
-z1&lt;/p&gt;
+
 
 &lt;h1 id=&#34;types-of-css-units&#34;&gt;Types of CSS Units&lt;/h1&gt;
 
