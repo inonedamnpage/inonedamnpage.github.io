@@ -44,7 +44,7 @@
 
 &lt;h1 id=&#34;types-of-selectors&#34;&gt;Types of selectors&lt;/h1&gt;
 
-
+&lt;p&gt;
 
 &lt;figure class=&#34;code&#34;&gt;
   &lt;figcaption&gt;
@@ -78,7 +78,7 @@
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
   &lt;/div&gt;
 &lt;/figure&gt;
-
+z1&lt;/p&gt;
 
 &lt;h1 id=&#34;types-of-css-units&#34;&gt;Types of CSS Units&lt;/h1&gt;
 
@@ -107,12 +107,22 @@
 &lt;li&gt;&lt;code&gt;#000000&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;commonly-used-attributes-in-css&#34;&gt;Commonly used attributes in CSS&lt;/h1&gt;
+&lt;h1 id=&#34;simple-commonly-used-attributes-in-css&#34;&gt;Simple commonly used attributes in CSS&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;color&lt;/em&gt;: Mostly refers to the font color of the element.&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;background&lt;/em&gt;: can be a color or image, and can have different other properties as well.&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;width&lt;/em&gt;: mostly used to specify the width of an element. Can be in pixels if absolute, or percentage, relative to it&amp;rsquo;s parent element.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;text-align&lt;/em&gt;: Used to specify which side the text of the element will align. Examples include left, right or center.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;line-height&lt;/em&gt;: How much space will be between the text lines.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;font-size&lt;/em&gt;: The size of the font, normal being &lt;code&gt;1em&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;font-weight&lt;/em&gt;: To specify &lt;code&gt;bold&lt;/code&gt; of the font.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;font-style&lt;/em&gt;: To specify &lt;code&gt;italic&lt;/code&gt; of the font.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;font-family&lt;/em&gt;: Type or family of the font.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;text-decoration&lt;/em&gt;: To &lt;code&gt;underline&lt;/code&gt; a text.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;border&lt;/em&gt;: The border width, style and color around an element. eg &lt;code&gt;2px dotted blue&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;border-radius&lt;/em&gt;: How rounded the borders are, in pixels. Length are given in clockwise direction.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;box-shadow&lt;/em&gt;: The shadow around box elements. Any number of shadows can be specified. Eg &lt;code&gt;10px 10px gray, 20px 20px&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -153,7 +163,7 @@
 
 &lt;h1 id=&#34;types-of-selectors&#34;&gt;Types of selectors&lt;/h1&gt;
 
-
+&lt;p&gt;
 
 &lt;figure class=&#34;code&#34;&gt;
   &lt;figcaption&gt;
@@ -187,7 +197,7 @@
 &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
   &lt;/div&gt;
 &lt;/figure&gt;
-
+z1&lt;/p&gt;
 
 &lt;h1 id=&#34;types-of-css-units&#34;&gt;Types of CSS Units&lt;/h1&gt;
 
@@ -216,12 +226,22 @@
 &lt;li&gt;&lt;code&gt;#000000&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;commonly-used-attributes-in-css&#34;&gt;Commonly used attributes in CSS&lt;/h1&gt;
+&lt;h1 id=&#34;simple-commonly-used-attributes-in-css&#34;&gt;Simple commonly used attributes in CSS&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;color&lt;/em&gt;: Mostly refers to the font color of the element.&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;background&lt;/em&gt;: can be a color or image, and can have different other properties as well.&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;width&lt;/em&gt;: mostly used to specify the width of an element. Can be in pixels if absolute, or percentage, relative to it&amp;rsquo;s parent element.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;text-align&lt;/em&gt;: Used to specify which side the text of the element will align. Examples include left, right or center.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;line-height&lt;/em&gt;: How much space will be between the text lines.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;font-size&lt;/em&gt;: The size of the font, normal being &lt;code&gt;1em&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;font-weight&lt;/em&gt;: To specify &lt;code&gt;bold&lt;/code&gt; of the font.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;font-style&lt;/em&gt;: To specify &lt;code&gt;italic&lt;/code&gt; of the font.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;font-family&lt;/em&gt;: Type or family of the font.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;text-decoration&lt;/em&gt;: To &lt;code&gt;underline&lt;/code&gt; a text.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;border&lt;/em&gt;: The border width, style and color around an element. eg &lt;code&gt;2px dotted blue&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;border-radius&lt;/em&gt;: How rounded the borders are, in pixels. Length are given in clockwise direction.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;box-shadow&lt;/em&gt;: The shadow around box elements. Any number of shadows can be specified. Eg &lt;code&gt;10px 10px gray, 20px 20px&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
