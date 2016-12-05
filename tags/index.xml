@@ -9,12 +9,434 @@
     <atom:link href="https://inonedamnpage.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Python Basics</title>
+      <link>https://inonedamnpage.github.io/post/python-basics/</link>
+      <pubDate>Sun, 04 Dec 2016 12:27:32 +0530</pubDate>
+      
+      <guid>https://inonedamnpage.github.io/post/python-basics/</guid>
+      <description>
+
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Python is a general purpose scripting language that can be used to build simple programs to rocket science. Since it is quite simple to use and also powerful, it has wide variety of applications.&lt;/p&gt;
+
+&lt;h2 id=&#34;creating-variables-in-python&#34;&gt;Creating Variables In Python&lt;/h2&gt;
+
+&lt;p&gt;Like JavaScript, Python variables are untyped and can store numbers, strings and floats. However, each variable is an object, and this has its own method and properties.&lt;/p&gt;
+
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Variables In Python&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Saurav&amp;quot;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;age&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;23&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;height&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;162.3&lt;/span&gt;
+&lt;span style=&#34;color: #66d9ef&#34;&gt;del&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# delete the name variable&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;However, unlike other languages, Python data types do not have a limit, and can be big or small precision as the memory of your computer.&lt;/p&gt;
+
+&lt;h2 id=&#34;operation-with-variables-in-python&#34;&gt;Operation With Variables In Python&lt;/h2&gt;
+
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Variable Operations&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
+2
+3&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;0.1&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0.1&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0.1&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0.3&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# will give a vary small precision value&lt;/span&gt;
+&lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# will give a float, as division always yields floats&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;int(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;3.8&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# parsing an int, will chop off the float value and give only 3&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;You can use any mathametical functions like other languages. However, floats are a bit tricky, so need special attention.&lt;/p&gt;
+
+&lt;h2 id=&#34;strings-in-python&#34;&gt;Strings In Python&lt;/h2&gt;
+
+&lt;p&gt;Like most other languages, Strings in python are enclosed in quotes. There are different ways of declaring it though.&lt;/p&gt;
+
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Creating Strings In Python&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
+2
+3
+4
+5
+6
+7
+8&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;Saurav` # single quotes&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;place&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Chinsurah&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# double quotes&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;address&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;&amp;#39;&amp;#39; Rowville Avenue,&lt;/span&gt;
+&lt;span style=&#34;color: #e6db74&#34;&gt;	55 Sahaganz&lt;/span&gt;
+&lt;span style=&#34;color: #e6db74&#34;&gt;	New Dehli. &amp;#39;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# triple quotes, can also contain new lines&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;age&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;str(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;25&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# calling the string constructor&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;sentence&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;Roy&amp;quot;s bike&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# different quotes&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;sen2&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;Roy&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\&amp;#39;&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;s second bike&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# escape characters&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;Like other languages, you can concatenate strings too, using the plus sign. However, remember, to convert numbers to string before concatenating.&lt;/p&gt;
+
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Operations On Strings&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
+2
+3&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;full_name&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;Saurav&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Modak&amp;quot;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;address&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;str(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;rowland street&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;five_equals&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;=&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# will display equals sign 5 times&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;Strings can also be used as templates, and can help in formatting things.&lt;/p&gt;
+
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Formatting Strings&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
+2&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;status&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;Hello, {}. My name is {}.&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color: #66d9ef&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(status&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;format(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;World&amp;#39;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;Saurav&amp;#39;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;h2 id=&#34;lists-in-python&#34;&gt;Lists In Python&lt;/h2&gt;
+
+&lt;p&gt;Like other languages, Python allows you to store number of items inside an array, which is called lists in python.&lt;/p&gt;
+
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Lists in Python&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
+2
+3
+4
+5
+6&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;my_list&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;my_list&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;append(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# appends an item&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;my_list&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;extend([&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;7&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;])&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# appends multiple items&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;my_list&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;8&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;9&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# concat works&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;my_list&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# list times twice&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;my_list&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;remove(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# will remove no. 3 from list&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;Ofcourse, you can use string and lists together, with several cool functions python offers.&lt;/p&gt;
+
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Lists in Python&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
+2&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Saurav is my name&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;split()&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# will split the string into arrays by the whitespace&lt;/span&gt;
+&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;join([&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Saurav&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;is&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;my&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;])&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# will join it back together&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;h2 id=&#34;calling-functions&#34;&gt;Calling Functions&lt;/h2&gt;
+
+&lt;p&gt;Functions let you group several statements and do tasks. Like other languages, they can be called easity.&lt;/p&gt;
+
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Calling Functions&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Hello, World&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;h2 id=&#34;the-python-shell-and-running-python-programs&#34;&gt;The Python Shell And Running Python Programs&lt;/h2&gt;
+
+&lt;p&gt;Like most scripting languages, python provides a shell where you can test programs and functions temporarily. It has a read-eval-print loop, so you get the output instantly.&lt;/p&gt;
+
+&lt;p&gt;More powerful shell implementation exists, including ipython and jupyter notebook.&lt;/p&gt;
+
+&lt;p&gt;To run a python program, you call&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;python filename.py&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python Basics</title>
+      <link>https://inonedamnpage.github.io/post/python-basics/</link>
+      <pubDate>Sun, 04 Dec 2016 12:27:32 +0530</pubDate>
+      
+      <guid>https://inonedamnpage.github.io/post/python-basics/</guid>
+      <description>
+
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;Python is a general purpose scripting language that can be used to build simple programs to rocket science. Since it is quite simple to use and also powerful, it has wide variety of applications.&lt;/p&gt;
+
+&lt;h2 id=&#34;creating-variables-in-python&#34;&gt;Creating Variables In Python&lt;/h2&gt;
+
+&lt;p&gt;Like JavaScript, Python variables are untyped and can store numbers, strings and floats. However, each variable is an object, and this has its own method and properties.&lt;/p&gt;
+
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Variables In Python&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
+2
+3
+4&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Saurav&amp;quot;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;age&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;23&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;height&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;162.3&lt;/span&gt;
+&lt;span style=&#34;color: #66d9ef&#34;&gt;del&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# delete the name variable&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;However, unlike other languages, Python data types do not have a limit, and can be big or small precision as the memory of your computer.&lt;/p&gt;
+
+&lt;h2 id=&#34;operation-with-variables-in-python&#34;&gt;Operation With Variables In Python&lt;/h2&gt;
+
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Variable Operations&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
+2
+3&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;0.1&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0.1&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0.1&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0.3&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# will give a vary small precision value&lt;/span&gt;
+&lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# will give a float, as division always yields floats&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;int(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;3.8&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# parsing an int, will chop off the float value and give only 3&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;You can use any mathametical functions like other languages. However, floats are a bit tricky, so need special attention.&lt;/p&gt;
+
+&lt;h2 id=&#34;strings-in-python&#34;&gt;Strings In Python&lt;/h2&gt;
+
+&lt;p&gt;Like most other languages, Strings in python are enclosed in quotes. There are different ways of declaring it though.&lt;/p&gt;
+
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Creating Strings In Python&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
+2
+3
+4
+5
+6
+7
+8&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;Saurav` # single quotes&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;place&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Chinsurah&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# double quotes&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;address&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;&amp;#39;&amp;#39; Rowville Avenue,&lt;/span&gt;
+&lt;span style=&#34;color: #e6db74&#34;&gt;	55 Sahaganz&lt;/span&gt;
+&lt;span style=&#34;color: #e6db74&#34;&gt;	New Dehli. &amp;#39;&amp;#39;&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# triple quotes, can also contain new lines&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;age&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;str(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;25&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# calling the string constructor&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;sentence&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;Roy&amp;quot;s bike&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# different quotes&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;sen2&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;Roy&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;\&amp;#39;&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;s second bike&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# escape characters&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;Like other languages, you can concatenate strings too, using the plus sign. However, remember, to convert numbers to string before concatenating.&lt;/p&gt;
+
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Operations On Strings&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
+2
+3&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;full_name&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;Saurav&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Modak&amp;quot;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;address&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;str(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;rowland street&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;five_equals&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;=&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# will display equals sign 5 times&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;Strings can also be used as templates, and can help in formatting things.&lt;/p&gt;
+
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Formatting Strings&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
+2&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;status&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;Hello, {}. My name is {}.&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color: #66d9ef&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(status&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;format(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;World&amp;#39;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;Saurav&amp;#39;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;h2 id=&#34;lists-in-python&#34;&gt;Lists In Python&lt;/h2&gt;
+
+&lt;p&gt;Like other languages, Python allows you to store number of items inside an array, which is called lists in python.&lt;/p&gt;
+
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Lists in Python&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
+2
+3
+4
+5
+6&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;my_list&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;my_list&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;append(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# appends an item&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;my_list&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;extend([&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;7&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;])&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# appends multiple items&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;my_list&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;+=&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;8&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;9&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# concat works&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;my_list&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# list times twice&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;my_list&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;remove(&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# will remove no. 3 from list&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;Ofcourse, you can use string and lists together, with several cool functions python offers.&lt;/p&gt;
+
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Lists in Python&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
+2&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Saurav is my name&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;split()&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# will split the string into arrays by the whitespace&lt;/span&gt;
+&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot; &amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;join([&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Saurav&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;is&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;my&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;])&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;# will join it back together&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;h2 id=&#34;calling-functions&#34;&gt;Calling Functions&lt;/h2&gt;
+
+&lt;p&gt;Functions let you group several statements and do tasks. Like other languages, they can be called easity.&lt;/p&gt;
+
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Calling Functions&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Hello, World&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;h2 id=&#34;the-python-shell-and-running-python-programs&#34;&gt;The Python Shell And Running Python Programs&lt;/h2&gt;
+
+&lt;p&gt;Like most scripting languages, python provides a shell where you can test programs and functions temporarily. It has a read-eval-print loop, so you get the output instantly.&lt;/p&gt;
+
+&lt;p&gt;More powerful shell implementation exists, including ipython and jupyter notebook.&lt;/p&gt;
+
+&lt;p&gt;To run a python program, you call&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;python filename.py&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>CSS Sizing Elements</title>
       <link>https://inonedamnpage.github.io/post/css-sizing-elements/</link>
       <pubDate>Wed, 16 Nov 2016 19:50:39 +0530</pubDate>
       
       <guid>https://inonedamnpage.github.io/post/css-sizing-elements/</guid>
       <description>
+
+&lt;h1 id=&#34;css-display-properties&#34;&gt;CSS Display Properties&lt;/h1&gt;
+
+&lt;p&gt;CSS elements can have three kind of display properties:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;display: block&lt;/code&gt;: Take up as much width as possible (with restraint from parent) and height according to the content. Eg: &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;. All block elements begin at a new line.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;display: inline&lt;/code&gt;: Take up height and width according to content. Eg: &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;. You cannot set the height and width of these elements, but can set the border and padding (which gets applied to the sides but not in top and bottom). Inline elements wrap when the content is bigger than their parent. They get displayed in the same line as other elements provided there is space.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;display: inline-block&lt;/code&gt;: Like inline elements, they begin in the same line if there is space, however, they take up all the properties of block elements - height, width, padding etc.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&#34;the-css-box-model&#34;&gt;The CSS Box Model&lt;/h1&gt;
 
@@ -40,14 +462,43 @@
 &lt;/figure&gt;
 
 
-&lt;h1 id=&#34;css-display-properties&#34;&gt;CSS Display Properties&lt;/h1&gt;
+&lt;p&gt;Remember, margin and padding are transparent in nature, and do not accept any color values. However, border does accept color values. Margin takes up the color of the parent element, while padding takes up the color of content.&lt;/p&gt;
 
-&lt;p&gt;CSS elements can have two kind of display properties:&lt;/p&gt;
+&lt;p&gt;You can define the length of all these properties by using shorthand or long hand forms.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;display: block&lt;/code&gt;: Take up as much width as possible (with restraint from parent) and height according to the content. Eg: &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;display: inline&lt;/code&gt;: Take up height and width according to content. Eg: &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;. You cannot set the height and width of these elements, but can set the border and padding (which gets applied to the sides but not in top and bottom). Inline elements wrap when the content is bigger than their parent.&lt;/li&gt;
-&lt;/ul&gt;
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Defining Sizes&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;padding&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;10px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;/* on all sides */&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #f92672&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;padding&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;10px&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;20px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;/* top bottom, left-right */&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #f92672&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;padding&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;10px&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;20px&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;30px&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;40px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;/* top, right, bottom, left clockwise */&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;h1 id=&#34;most-used-html-elements-for-styling&#34;&gt;Most Used HTML Elements For Styling&lt;/h1&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; are the generic HTML elements can be used for applying styles. Divs are the most generic block elements while spans are most generic inline elements.&lt;/p&gt;
 
 &lt;h1 id=&#34;semantic-elements&#34;&gt;Semantic Elements&lt;/h1&gt;
 
@@ -57,6 +508,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;float&lt;/em&gt;: Incase of an image, the specify the direction the image will align to, and the text will take up rest of the page.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;vertical-align&lt;/em&gt;: Allows to align inline elements vertically, much like &lt;code&gt;text-align&lt;/code&gt; but vertical.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -69,6 +521,16 @@
       <guid>https://inonedamnpage.github.io/post/css-sizing-elements/</guid>
       <description>
 
+&lt;h1 id=&#34;css-display-properties&#34;&gt;CSS Display Properties&lt;/h1&gt;
+
+&lt;p&gt;CSS elements can have three kind of display properties:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;display: block&lt;/code&gt;: Take up as much width as possible (with restraint from parent) and height according to the content. Eg: &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;. All block elements begin at a new line.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;display: inline&lt;/code&gt;: Take up height and width according to content. Eg: &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;. You cannot set the height and width of these elements, but can set the border and padding (which gets applied to the sides but not in top and bottom). Inline elements wrap when the content is bigger than their parent. They get displayed in the same line as other elements provided there is space.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;display: inline-block&lt;/code&gt;: Like inline elements, they begin in the same line if there is space, however, they take up all the properties of block elements - height, width, padding etc.&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h1 id=&#34;the-css-box-model&#34;&gt;The CSS Box Model&lt;/h1&gt;
 
 &lt;p&gt;All elements in an HTML page can be broken down to and represented in boxes. So CSS provides a box model which is used to size elements.&lt;/p&gt;
@@ -93,14 +555,43 @@
 &lt;/figure&gt;
 
 
-&lt;h1 id=&#34;css-display-properties&#34;&gt;CSS Display Properties&lt;/h1&gt;
+&lt;p&gt;Remember, margin and padding are transparent in nature, and do not accept any color values. However, border does accept color values. Margin takes up the color of the parent element, while padding takes up the color of content.&lt;/p&gt;
 
-&lt;p&gt;CSS elements can have two kind of display properties:&lt;/p&gt;
+&lt;p&gt;You can define the length of all these properties by using shorthand or long hand forms.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;display: block&lt;/code&gt;: Take up as much width as possible (with restraint from parent) and height according to the content. Eg: &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;display: inline&lt;/code&gt;: Take up height and width according to content. Eg: &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt;. You cannot set the height and width of these elements, but can set the border and padding (which gets applied to the sides but not in top and bottom). Inline elements wrap when the content is bigger than their parent.&lt;/li&gt;
-&lt;/ul&gt;
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Defining Sizes&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;padding&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;10px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;/* on all sides */&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #f92672&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;padding&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;10px&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;20px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;/* top bottom, left-right */&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #f92672&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;padding&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;10px&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;20px&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;30px&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;40px&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;/* top, right, bottom, left clockwise */&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;h1 id=&#34;most-used-html-elements-for-styling&#34;&gt;Most Used HTML Elements For Styling&lt;/h1&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;span&amp;gt;&lt;/code&gt; are the generic HTML elements can be used for applying styles. Divs are the most generic block elements while spans are most generic inline elements.&lt;/p&gt;
 
 &lt;h1 id=&#34;semantic-elements&#34;&gt;Semantic Elements&lt;/h1&gt;
 
@@ -110,6 +601,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;float&lt;/em&gt;: Incase of an image, the specify the direction the image will align to, and the text will take up rest of the page.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;vertical-align&lt;/em&gt;: Allows to align inline elements vertically, much like &lt;code&gt;text-align&lt;/code&gt; but vertical.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -186,6 +678,40 @@
 &lt;/figure&gt;
 
 
+&lt;h1 id=&#34;cascading-nature-of-selectors&#34;&gt;Cascading Nature Of Selectors&lt;/h1&gt;
+
+&lt;p&gt;In general, CSS styles are applied in a cascading way, e.g., if two selectors target the same element, then the style appearing later in the sheet gets applied. However, there are a few exceptions.&lt;/p&gt;
+
+&lt;p&gt;Tag selectors have a value of &lt;code&gt;0-0-1&lt;/code&gt;, class ones have &lt;code&gt;0-1-0&lt;/code&gt; and id have the highest &lt;code&gt;1-0-0&lt;/code&gt;. Which means id selectors take precedent even when they come before other styles targeting the same element in style-sheet.&lt;/p&gt;
+
+&lt;p&gt;You can combine selectors, and whether they will get applied or not will depend on their combined value.&lt;/p&gt;
+
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Combining Selectors&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
+2
+3
+4
+5
+6&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;.hotdog&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;background&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;brown;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;.hotdog&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;.mustard&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;background&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;yellow;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;The first selector has the combined value of &lt;code&gt;0-1-0 + 0-0-1&lt;/code&gt; equals &lt;code&gt;0-1-1&lt;/code&gt;. Like wise, the second one has the value of &lt;code&gt;0-2-1&lt;/code&gt;. Hence the later style has higher precedence. However, note there is no space in the second selector, which means it will get applied to paragraphs only having that classname. If the paragraph selector is removed, then it will select any element with the class mustard.&lt;/p&gt;
+
 &lt;h1 id=&#34;types-of-css-units&#34;&gt;Types of CSS Units&lt;/h1&gt;
 
 &lt;p&gt;Units are used everywhere in CSS to specify length, width, height etc of content and tags. They are basically divided into absolute and relative units.&lt;/p&gt;
@@ -230,6 +756,12 @@
 &lt;li&gt;&lt;em&gt;border-radius&lt;/em&gt;: How rounded the borders are, in pixels. Length are given in clockwise direction.&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;box-shadow&lt;/em&gt;: The shadow around box elements. Any number of shadows can be specified. Eg &lt;code&gt;10px 10px gray, 20px 20px&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h1 id=&#34;normalizing-styles&#34;&gt;Normalizing Styles&lt;/h1&gt;
+
+&lt;p&gt;Different browses have different browser styles for displaying elements, which may make the web pages look differently in different browsers. For this reason, we use browser resets which reset the style and make the web page look the same.&lt;/p&gt;
+
+&lt;p&gt;Two most popular resets are &lt;a href=&#34;http://meyerweb.com/eric/tools/css/reset/&#34;&gt;Mayerweb&lt;/a&gt; which resets things completely or &lt;a href=&#34;https://github.com/necolas/normalize.css/&#34;&gt;Normalize&lt;/a&gt; which applies some good looking default styles to elements.&lt;/p&gt;
 </description>
     </item>
     
@@ -305,6 +837,40 @@
 &lt;/figure&gt;
 
 
+&lt;h1 id=&#34;cascading-nature-of-selectors&#34;&gt;Cascading Nature Of Selectors&lt;/h1&gt;
+
+&lt;p&gt;In general, CSS styles are applied in a cascading way, e.g., if two selectors target the same element, then the style appearing later in the sheet gets applied. However, there are a few exceptions.&lt;/p&gt;
+
+&lt;p&gt;Tag selectors have a value of &lt;code&gt;0-0-1&lt;/code&gt;, class ones have &lt;code&gt;0-1-0&lt;/code&gt; and id have the highest &lt;code&gt;1-0-0&lt;/code&gt;. Which means id selectors take precedent even when they come before other styles targeting the same element in style-sheet.&lt;/p&gt;
+
+&lt;p&gt;You can combine selectors, and whether they will get applied or not will depend on their combined value.&lt;/p&gt;
+
+
+
+&lt;figure class=&#34;code&#34;&gt;
+  &lt;figcaption&gt;
+  	&lt;span&gt;Combining Selectors&lt;/span&gt;
+  &lt;/figcaption&gt;
+  &lt;div class=&#34;codewrapper&#34;&gt;
+    &lt;table class=&#34;highlighttable&#34;&gt;&lt;tr&gt;&lt;td&gt;&lt;div class=&#34;linenodiv&#34; style=&#34;background-color: #f0f0f0; padding-right: 10px&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;1
+2
+3
+4
+5
+6&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;.hotdog&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;background&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;brown;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #a6e22e&#34;&gt;.hotdog&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;.mustard&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;background&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;yellow;&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+  &lt;/div&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;The first selector has the combined value of &lt;code&gt;0-1-0 + 0-0-1&lt;/code&gt; equals &lt;code&gt;0-1-1&lt;/code&gt;. Like wise, the second one has the value of &lt;code&gt;0-2-1&lt;/code&gt;. Hence the later style has higher precedence. However, note there is no space in the second selector, which means it will get applied to paragraphs only having that classname. If the paragraph selector is removed, then it will select any element with the class mustard.&lt;/p&gt;
+
 &lt;h1 id=&#34;types-of-css-units&#34;&gt;Types of CSS Units&lt;/h1&gt;
 
 &lt;p&gt;Units are used everywhere in CSS to specify length, width, height etc of content and tags. They are basically divided into absolute and relative units.&lt;/p&gt;
@@ -349,6 +915,12 @@
 &lt;li&gt;&lt;em&gt;border-radius&lt;/em&gt;: How rounded the borders are, in pixels. Length are given in clockwise direction.&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;box-shadow&lt;/em&gt;: The shadow around box elements. Any number of shadows can be specified. Eg &lt;code&gt;10px 10px gray, 20px 20px&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h1 id=&#34;normalizing-styles&#34;&gt;Normalizing Styles&lt;/h1&gt;
+
+&lt;p&gt;Different browses have different browser styles for displaying elements, which may make the web pages look differently in different browsers. For this reason, we use browser resets which reset the style and make the web page look the same.&lt;/p&gt;
+
+&lt;p&gt;Two most popular resets are &lt;a href=&#34;http://meyerweb.com/eric/tools/css/reset/&#34;&gt;Mayerweb&lt;/a&gt; which resets things completely or &lt;a href=&#34;https://github.com/necolas/normalize.css/&#34;&gt;Normalize&lt;/a&gt; which applies some good looking default styles to elements.&lt;/p&gt;
 </description>
     </item>
     

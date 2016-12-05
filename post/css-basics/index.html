@@ -101,7 +101,7 @@
 
 <header>
     <p class="meta">Nov 15, 2016
-         - 2 minute read 
+         - 3 minute read 
         
 
         
@@ -124,9 +124,11 @@
 <ul>
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#types-of-selectors">Types of selectors</a></li>
+<li><a href="#cascading-nature-of-selectors">Cascading Nature Of Selectors</a></li>
 <li><a href="#types-of-css-units">Types of CSS Units</a></li>
 <li><a href="#colors-in-css">Colors in CSS</a></li>
 <li><a href="#simple-commonly-used-attributes-in-css">Simple commonly used attributes in CSS</a></li>
+<li><a href="#normalizing-styles">Normalizing Styles</a></li>
 </ul>
 </nav>
           
@@ -196,6 +198,40 @@
 </figure>
 
 
+<h1 id="cascading-nature-of-selectors">Cascading Nature Of Selectors</h1>
+
+<p>In general, CSS styles are applied in a cascading way, e.g., if two selectors target the same element, then the style appearing later in the sheet gets applied. However, there are a few exceptions.</p>
+
+<p>Tag selectors have a value of <code>0-0-1</code>, class ones have <code>0-1-0</code> and id have the highest <code>1-0-0</code>. Which means id selectors take precedent even when they come before other styles targeting the same element in style-sheet.</p>
+
+<p>You can combine selectors, and whether they will get applied or not will depend on their combined value.</p>
+
+
+
+<figure class="code">
+  <figcaption>
+  	<span>Combining Selectors</span>
+  </figcaption>
+  <div class="codewrapper">
+    <table class="highlighttable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%">1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #a6e22e">.hotdog</span> <span style="color: #f92672">p</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: #f8f8f2">background</span><span style="color: #f92672">:</span> <span style="color: #f8f8f2">brown;</span>
+<span style="color: #f8f8f2">}</span>
+<span style="color: #a6e22e">.hotdog</span> <span style="color: #f92672">p</span><span style="color: #a6e22e">.mustard</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: #f8f8f2">background</span><span style="color: #f92672">:</span> <span style="color: #f8f8f2">yellow;</span>
+<span style="color: #f8f8f2">}</span>
+</pre></div>
+</td></tr></table>
+  </div>
+</figure>
+
+
+<p>The first selector has the combined value of <code>0-1-0 + 0-0-1</code> equals <code>0-1-1</code>. Like wise, the second one has the value of <code>0-2-1</code>. Hence the later style has higher precedence. However, note there is no space in the second selector, which means it will get applied to paragraphs only having that classname. If the paragraph selector is removed, then it will select any element with the class mustard.</p>
+
 <h1 id="types-of-css-units">Types of CSS Units</h1>
 
 <p>Units are used everywhere in CSS to specify length, width, height etc of content and tags. They are basically divided into absolute and relative units.</p>
@@ -240,6 +276,12 @@
 <li><em>border-radius</em>: How rounded the borders are, in pixels. Length are given in clockwise direction.</li>
 <li><em>box-shadow</em>: The shadow around box elements. Any number of shadows can be specified. Eg <code>10px 10px gray, 20px 20px</code>.</li>
 </ul>
+
+<h1 id="normalizing-styles">Normalizing Styles</h1>
+
+<p>Different browses have different browser styles for displaying elements, which may make the web pages look differently in different browsers. For this reason, we use browser resets which reset the style and make the web page look the same.</p>
+
+<p>Two most popular resets are <a href="http://meyerweb.com/eric/tools/css/reset/">Mayerweb</a> which resets things completely or <a href="https://github.com/necolas/normalize.css/">Normalize</a> which applies some good looking default styles to elements.</p>
 
         </div>
         
@@ -320,6 +362,10 @@
       <section class="even">
         <h1>Recent Posts</h1>
         <ul id="recent_posts">
+          
+            <li class="post">
+              <a href="/post/python-basics/">Python Basics</a>
+            </li>
           
             <li class="post">
               <a href="/post/css-sizing-elements/">CSS Sizing Elements</a>

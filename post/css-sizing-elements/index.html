@@ -101,7 +101,7 @@
 
 <header>
     <p class="meta">Nov 16, 2016
-         - 2 minute read 
+         - 3 minute read 
         
 
         
@@ -122,14 +122,25 @@
           
             <nav id="TableOfContents">
 <ul>
-<li><a href="#the-css-box-model">The CSS Box Model</a></li>
 <li><a href="#css-display-properties">CSS Display Properties</a></li>
+<li><a href="#the-css-box-model">The CSS Box Model</a></li>
+<li><a href="#most-used-html-elements-for-styling">Most Used HTML Elements For Styling</a></li>
 <li><a href="#semantic-elements">Semantic Elements</a></li>
 <li><a href="#some-advanced-css-properties">Some Advanced CSS Properties</a></li>
 </ul>
 </nav>
           
           
+
+<h1 id="css-display-properties">CSS Display Properties</h1>
+
+<p>CSS elements can have three kind of display properties:</p>
+
+<ul>
+<li><code>display: block</code>: Take up as much width as possible (with restraint from parent) and height according to the content. Eg: <code>&lt;div&gt;</code>. All block elements begin at a new line.</li>
+<li><code>display: inline</code>: Take up height and width according to content. Eg: <code>&lt;span&gt;</code>. You cannot set the height and width of these elements, but can set the border and padding (which gets applied to the sides but not in top and bottom). Inline elements wrap when the content is bigger than their parent. They get displayed in the same line as other elements provided there is space.</li>
+<li><code>display: inline-block</code>: Like inline elements, they begin in the same line if there is space, however, they take up all the properties of block elements - height, width, padding etc.</li>
+</ul>
 
 <h1 id="the-css-box-model">The CSS Box Model</h1>
 
@@ -155,14 +166,43 @@
 </figure>
 
 
-<h1 id="css-display-properties">CSS Display Properties</h1>
+<p>Remember, margin and padding are transparent in nature, and do not accept any color values. However, border does accept color values. Margin takes up the color of the parent element, while padding takes up the color of content.</p>
 
-<p>CSS elements can have two kind of display properties:</p>
+<p>You can define the length of all these properties by using shorthand or long hand forms.</p>
 
-<ul>
-<li><code>display: block</code>: Take up as much width as possible (with restraint from parent) and height according to the content. Eg: <code>&lt;div&gt;</code>.</li>
-<li><code>display: inline</code>: Take up height and width according to content. Eg: <code>&lt;span&gt;</code>. You cannot set the height and width of these elements, but can set the border and padding (which gets applied to the sides but not in top and bottom). Inline elements wrap when the content is bigger than their parent.</li>
-</ul>
+
+
+<figure class="code">
+  <figcaption>
+  	<span>Defining Sizes</span>
+  </figcaption>
+  <div class="codewrapper">
+    <table class="highlighttable"><tr><td><div class="linenodiv" style="background-color: #f0f0f0; padding-right: 10px"><pre style="line-height: 125%">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">p</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: #f8f8f2">padding</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">10px</span><span style="color: #f8f8f2">;</span> <span style="color: #75715e">/* on all sides */</span>
+<span style="color: #f8f8f2">}</span>
+<span style="color: #f92672">p</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: #f8f8f2">padding</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">10px</span> <span style="color: #ae81ff">20px</span><span style="color: #f8f8f2">;</span> <span style="color: #75715e">/* top bottom, left-right */</span>
+<span style="color: #f8f8f2">}</span>
+<span style="color: #f92672">p</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: #f8f8f2">padding</span><span style="color: #f92672">:</span> <span style="color: #ae81ff">10px</span> <span style="color: #ae81ff">20px</span> <span style="color: #ae81ff">30px</span> <span style="color: #ae81ff">40px</span><span style="color: #f8f8f2">;</span> <span style="color: #75715e">/* top, right, bottom, left clockwise */</span>
+<span style="color: #f8f8f2">}</span>
+</pre></div>
+</td></tr></table>
+  </div>
+</figure>
+
+
+<h1 id="most-used-html-elements-for-styling">Most Used HTML Elements For Styling</h1>
+
+<p><code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> are the generic HTML elements can be used for applying styles. Divs are the most generic block elements while spans are most generic inline elements.</p>
 
 <h1 id="semantic-elements">Semantic Elements</h1>
 
@@ -172,6 +212,7 @@
 
 <ul>
 <li><em>float</em>: Incase of an image, the specify the direction the image will align to, and the text will take up rest of the page.</li>
+<li><em>vertical-align</em>: Allows to align inline elements vertically, much like <code>text-align</code> but vertical.</li>
 </ul>
 
         </div>
@@ -201,6 +242,8 @@
         <a class="basic-alignment left" href="https://inonedamnpage.github.io/post/css-basics/" title="CSS Basics">CSS Basics</a>
     
 
+    
+      <a class="basic-alignment right" href="https://inonedamnpage.github.io/post/python-basics/" title="Python Basics">Python Basics</a>
     
   </p>
   
@@ -253,6 +296,10 @@
       <section class="even">
         <h1>Recent Posts</h1>
         <ul id="recent_posts">
+          
+            <li class="post">
+              <a href="/post/python-basics/">Python Basics</a>
+            </li>
           
             <li class="post">
               <a href="/post/css-sizing-elements/">CSS Sizing Elements</a>
